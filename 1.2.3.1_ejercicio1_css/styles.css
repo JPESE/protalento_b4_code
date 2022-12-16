@@ -1,0 +1,18 @@
+h1 {color: #8338ec;} 
+h1 {font-family:  Verdana, Ginebra, Tahoma, sans-serif;}
+h1 {font-size: 32px;}
+h1 {text-align: center;}
+h1 {text-transform: uppercase;}
+img {width: 400px;}
+img {border-radius: 8px;}
+p {font-family: Georgia, 'Times New Roman', Times, serif;}
+p {font-size: 16px;}
+p {color:#a2d2ff;}
+body {background-color: #333533;}
+h2 {color: #f15bb5;} 
+h2 {font-family: 'Courier New', Courier, monospace;}
+h2 {font-size: 24px;}
+span {color: #060;font-weight: bold;}
+.especial {color: #FFF; font-style: italic; background-color: #000;}
+li {color: #a2d2ff;}
+a {font-size: 22px; color: chartreuse;}
