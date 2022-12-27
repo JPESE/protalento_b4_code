@@ -1,0 +1,75 @@
+.padre {
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px 0px;
+      
+    
+}
+
+.cuadrouno {
+    background-color: red;
+    width: 20vw;
+    height: 40vh;
+    margin: 15px;
+    display: flex;
+    flex-grow: 2;
+    flex-basis: auto;
+   
+}
+.cuadrodos {
+    background-color: #131394;
+    width: 5vw;
+    height: 40vh;
+    display: flex;
+    margin: 15px;
+    margin-bottom: 0vh;
+    align-self: center;
+    border: solid  2vh #131394;
+   
+}
+.cuadrotres {
+    background-color: red;
+    width: 60vw;
+    height: 40vh;
+    margin:15px;
+    display: flex;
+}
+.cuadrocuatro {
+    background-color: #131394;
+    width: 110vw;
+    height: 10vh;
+    margin: 15px;
+    margin-bottom: 0vh;
+    display: flex;
+    border: solid  2vh #131394;
+   
+    
+} 
+.cuadrocinco{
+    background-color: red;
+    width: 20vw;
+    height: 35vh;
+    margin: 15px;
+    display: flex;
+    flex-basis: auto;
+}
+.cuadroseis{
+    background-color: #131394;
+    width: 7vw;
+    height: 50vh;
+    margin: 15px;
+    margin-top: 0vh;
+    display: flex;
+    border: top solid 20px #131394;
+}
+.cuadrosiete{                                                                
+    background-color: red;
+    width: 60vw;
+    height: 35vh;
+    margin: 15px;
+    display: flex;
+}
