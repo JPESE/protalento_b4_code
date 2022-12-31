@@ -1,0 +1,43 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+}
+.padre {
+    height:10%;
+    width: 100%;
+    text-align: right;
+}
+       
+.hijo{
+        height: 30%;
+        width: 100%;
+        background-color: white;  
+    }
+    img {
+        height: 200px;
+        display: block;
+        margin: auto;}
+
+.hijo2{height:10% ;
+       width:100% ;
+    background-color: white;
+    bottom: 10%;
+}
+
+.hijo3{
+    height:10% ;
+    width:100% ;
+ background-color: white;}
+ .hijo4{height:10% ;
+    width:100% ;
+ background-color: white;}
+ .hijo5{height:10% ;
+    width:100% ;
+ background-color: white;}
+ .hijo6{height:10% ;
+    width:100% ;
+ background-color: white;}
+ .hijo7{height: 10%;
+width: 100%;
+background-color: white;}
