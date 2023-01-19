@@ -39,15 +39,62 @@
 
  //e.Solicitar al usuario que ingrese tres números y mostrar cuál de los tres es el número mayor. Considerar el caso en que 2 números sean iguales.
  
- //     let a =prompt("ingrese el primer numero");
- //   let b =prompt("ingrese el segundo numero");
- //     let c =prompt("ingrese el tercer numero");
- //     let d =prompt("numero mayor")
- //       
- //        if (a<=b && b<=c && c<=a)
- //        alert("numero mayor: ");
+ //let n1,n2,n3,t,mayor,igual;
+//	n1 =(prompt("Número 1"));
+//	n2 =(prompt("Número 2"));
+//	n3 =(prompt("Número 3"));
+//
+//	if (n1 > n2) {
+//		t = n1;
+//	}else{
+//		t = n2;
+//	}
+
+//	if (t > n3) {
+//		mayor = t;
+//	}else{
+//		mayor = n3;
+//	}
+//  alert("El mayor es "+mayor);
+//  if ( (igual === n1,n2,n3 ) ) {
+//    alert( 'Dos numeros son iguales')}
         
-
-
  //Adicional: Requerir al usuario que ingrese un día de la semana e imprimir un mensaje si es lunes, otro mensaje diferente si es viernes, otro mensaje diferente si es sábado o domingo. Si el día ingresado no es ninguno de esos, imprimir otro mensaje.
+  
+    let DiasDeLaSemana = prompt ( "ingresa un dia de la semana por fabor")
+
+        if( DiasDeLaSemana.toLowerCase() === 'lunes'){
+              alert(DiasDeLaSemana + ' de zapatero');
+            }
+            
+        if( DiasDeLaSemana.toLowerCase() === 'viernes'){
+              alert(DiasDeLaSemana + ' y el cuerpo lo sabe');
+              }
+
+        if( DiasDeLaSemana.toLowerCase() === 'sabado'){
+              alert(DiasDeLaSemana + ' ¿asadito o que?');
+              }
+
+        if( DiasDeLaSemana.toLowerCase() === 'domingo'){
+              alert(DiasDeLaSemana + ' de desemguayabe');
+              }   
+
+        if( DiasDeLaSemana.toLowerCase() === 'martes'){
+              alert(DiasDeLaSemana + ' con toda ');
+              }    
+
+        if( DiasDeLaSemana.toLowerCase() === 'miercoles'){
+              alert(DiasDeLaSemana + ' con toda ');
+              }   
+
+        if( DiasDeLaSemana.toLowerCase() === 'jueves'){
+              alert(DiasDeLaSemana + ' con toda ');
+              }  
+             
+         
+
+
+          
+
+
                 
