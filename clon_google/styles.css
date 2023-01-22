@@ -11,7 +11,7 @@ header{
     width: 100%;
     height: 60px;
 }
-header nav{
+header{
     display: flex;
     justify-content: flex-end;
 }
@@ -136,7 +136,7 @@ footer ul{
 
 }
 .footer-left{
-    justify-content: left;
+    justify-content: right;
 }
 .footer-right{
     justify-content: right;
