@@ -9,9 +9,19 @@
 // y se deben convertir en un array, (el usuario ingresa: "1,2,3,4,5" y se convierte en [1,2,3,4,5]). 
 //Mostrar en consola dicho resultado.
 
-const palabraUsuario = prompt("Ingresa palabras separadas por coma")
-console.log(palabraUsuario);
-const arregloPalabra = palabraUsuario.split(",");
-console.log(arregloPalabra);
+//const palabraUsuario = prompt("Ingresa palabras separadas por coma")
+//console.log(palabraUsuario);
+//const arregloPalabra = palabraUsuario.split(",");
+//console.log(arregloPalabra);
 
 //De acuerdo al array [10,40,30,20,15,5], imprime lo siguiente: El arreglo ordenado de menor a mayor, muestra el número menor y el número mayor. Tip: Busca en google los métodos de JavaScript que regresan el mayor y menor elemento de un arreglo
+
+const array = [10,40,30,20,15,5];
+
+function compareNumbers(a, b){
+    console.log(`a: ${a}, b: ${b}, a-b: ${a-b}`);
+    return a - b;
+}
+console.log(array.sort(compareNumbers));
+console.log(Math.max(...array));
+console.log(Math.min(...array));
