@@ -8,19 +8,19 @@
   //alert(numeroIngresado + ' número no es divisible entre 2')  }
 
   //FUNCIONES
-  let numeroIngresado  = prompt( "ingresa un numero por favor" )
-  function numerodivisible(numero){
-      if ((numeroIngresado % 2) == 0){
-      alert(numeroIngresado + 'numero es divisible entre 2')      
-      }
-      else{
-            alert(numeroIngresado + 'numero no es divisible entre 2')
-      }
-      return mensajeRetorno
+  //let numeroIngresado  = prompt( "ingresa un numero por favor" )
+  //function numerodivisible(numero){
+  //    if ((numeroIngresado % 2) == 0){
+  //    alert(numeroIngresado + 'numero es divisible entre 2')      
+  //    }
+  //    else{
+  //          alert(numeroIngresado + 'numero no es divisible entre 2')
+  //    }
+  //    return mensajeRetorno
       
-  }
-  let mensajeRetorno = numerodivisible (numeroIngresado)
-  alert (mensajeRetorno)
+  //}
+  //let mensajeRetorno = numerodivisible (numeroIngresado)
+  //alert (mensajeRetorno)
 
   
 /*b.Crear un programa que determine si un número introducido en un Prompt es par o no, la respuesta será mostrada en un Alert. */
@@ -106,7 +106,18 @@
       //  if( DiasDeLaSemana.toLowerCase() === 'jueves'){
        //       alert(DiasDeLaSemana + ' con toda ');
         //      }  
-             
+             //TAREA CONDICIONALES CON FUNCIONES
+ //1. Solicitar al usuario que responda a la pregunta (“¿Eres bellisimo/a?”), en caso de contestar sí, responder “Ciertamente”, en caso de contestar no,responder: “No te creo”.
+  
+ function pregunta (cualidad){
+  const valoringresado = prompt ("¿Eres bellisimo/a?") // si - no
+  if (valoringresado === 'si') { // si
+      alert('Ciertamente');
+  } else {
+      alert('No te creo');
+  }
+}
+pregunta();
          
 
 
