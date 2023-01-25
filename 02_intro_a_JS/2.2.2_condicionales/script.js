@@ -6,6 +6,22 @@
   //alert(numeroIngresado + ' número es divisible entre 2')} 
    //else {
   //alert(numeroIngresado + ' número no es divisible entre 2')  }
+
+  //FUNCIONES
+  let numeroIngresado  = prompt( "ingresa un numero por favor" )
+  function numerodivisible(numero){
+      if ((numeroIngresado % 2) == 0){
+      alert(numeroIngresado + 'numero es divisible entre 2')      
+      }
+      else{
+            alert(numeroIngresado + 'numero no es divisible entre 2')
+      }
+      return mensajeRetorno
+      
+  }
+  let mensajeRetorno = numerodivisible (numeroIngresado)
+  alert (mensajeRetorno)
+
   
 /*b.Crear un programa que determine si un número introducido en un Prompt es par o no, la respuesta será mostrada en un Alert. */
 
@@ -61,35 +77,35 @@
         
  //Adicional: Requerir al usuario que ingrese un día de la semana e imprimir un mensaje si es lunes, otro mensaje diferente si es viernes, otro mensaje diferente si es sábado o domingo. Si el día ingresado no es ninguno de esos, imprimir otro mensaje.
   
-    let DiasDeLaSemana = prompt ( "ingresa un dia de la semana por fabor")
+   // let DiasDeLaSemana = prompt ( "ingresa un dia de la semana por fabor")
 
-        if( DiasDeLaSemana.toLowerCase() === 'lunes'){
-              alert(DiasDeLaSemana + ' de zapatero');
-            }
-            
-        if( DiasDeLaSemana.toLowerCase() === 'viernes'){
-              alert(DiasDeLaSemana + ' y el cuerpo lo sabe');
-              }
+    //    if( DiasDeLaSemana.toLowerCase() === 'lunes'){
+    //          alert(DiasDeLaSemana + ' de zapatero');
+    //        }
+    //        
+    //    if( DiasDeLaSemana.toLowerCase() === 'viernes'){
+    //          alert(DiasDeLaSemana + ' y el cuerpo lo sabe');
+    //          }
+//
+  //      if( DiasDeLaSemana.toLowerCase() === 'sabado'){
+    //          alert(DiasDeLaSemana + ' ¿asadito o que?');
+      //        }
+//
+  //      if( DiasDeLaSemana.toLowerCase() === 'domingo'){
+    //          alert(DiasDeLaSemana + ' de desemguayabe');
+      //        }   
 
-        if( DiasDeLaSemana.toLowerCase() === 'sabado'){
-              alert(DiasDeLaSemana + ' ¿asadito o que?');
-              }
+      //  if( DiasDeLaSemana.toLowerCase() === 'martes'){
+        //      alert(DiasDeLaSemana + ' con toda ');
+          //    }    
 
-        if( DiasDeLaSemana.toLowerCase() === 'domingo'){
-              alert(DiasDeLaSemana + ' de desemguayabe');
-              }   
+     //   if( DiasDeLaSemana.toLowerCase() === 'miercoles'){
+       //       alert(DiasDeLaSemana + ' con toda ');
+         //     }   
 
-        if( DiasDeLaSemana.toLowerCase() === 'martes'){
-              alert(DiasDeLaSemana + ' con toda ');
-              }    
-
-        if( DiasDeLaSemana.toLowerCase() === 'miercoles'){
-              alert(DiasDeLaSemana + ' con toda ');
-              }   
-
-        if( DiasDeLaSemana.toLowerCase() === 'jueves'){
-              alert(DiasDeLaSemana + ' con toda ');
-              }  
+      //  if( DiasDeLaSemana.toLowerCase() === 'jueves'){
+       //       alert(DiasDeLaSemana + ' con toda ');
+        //      }  
              
          
 
