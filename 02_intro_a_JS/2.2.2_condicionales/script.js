@@ -109,15 +109,29 @@
              //TAREA CONDICIONALES CON FUNCIONES
  //1. Solicitar al usuario que responda a la pregunta (“¿Eres bellisimo/a?”), en caso de contestar sí, responder “Ciertamente”, en caso de contestar no,responder: “No te creo”.
   
- function pregunta (cualidad){
-  const valoringresado = prompt ("¿Eres bellisimo/a?") // si - no
-  if (valoringresado === 'si') { // si
-      alert('Ciertamente');
+ function pregunta (respuestaUsuario){
+  //const valorIngresado = prompt ("¿Eres bellisimo/a?") // si - no
+  if (respuestaUsuario === 'si') { // si
+      //alert('Ciertamente');
+      return "Ciertamente";
   } else {
-      alert('No te creo');
+      //alert('No te creo');
+      return "No te creo";
   }
 }
-pregunta();
+//esta linea no debe ir porque no quiero que se ejecute cuando se carga el archivo
+//pregunta();
+
+function ejercicio1(){
+
+  const valorIngresado = document.getElementById("input-ejercicio-1").value;
+  const resultadoFuncion = pregunta(valorIngresado);
+  const newtext = document.createTextNode(resultadoFuncion );
+  const elementoResultado = document.getElementById("resultado-1");
+  elementoResultado.innerHTML = "";
+  elementoResultado.appendChild(newtext);
+  
+}
          
 
 
