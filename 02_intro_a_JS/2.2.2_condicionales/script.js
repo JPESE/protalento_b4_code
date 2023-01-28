@@ -106,36 +106,107 @@
       //  if( DiasDeLaSemana.toLowerCase() === 'jueves'){
        //       alert(DiasDeLaSemana + ' con toda ');
         //      }  
-             //TAREA CONDICIONALES CON FUNCIONES
- //1. Solicitar al usuario que responda a la pregunta (“¿Eres bellisimo/a?”), en caso de contestar sí, responder “Ciertamente”, en caso de contestar no,responder: “No te creo”.
-  
- function pregunta (respuestaUsuario){
-  //const valorIngresado = prompt ("¿Eres bellisimo/a?") // si - no
-  if (respuestaUsuario === 'si') { // si
-      //alert('Ciertamente');
-      return "Ciertamente";
-  } else {
-      //alert('No te creo');
-      return "No te creo";
+//TAREA CONDICIONALES CON FUNCIONES
+      function pregunta (respuestaUsuario){
+//const valorIngresado = prompt ("¿Eres bellisimo/a?") // si - no
+        if (respuestaUsuario === 'si') { // si
+          //alert('Ciertamente');
+        return "Ciertamente";
+        } else {
+         //alert('No te creo');
+        return "No te creo";
+         }
+        }
+  //esta linea no debe ir porque no quiero que se ejecute cuando se carga el archivo
+  //pregunta();
+            
+  function ejercicio1(){
+    const valorIngresado = document.getElementById("input-ejercicio-1").value;
+    const resultadoFuncion = pregunta(valorIngresado);
+    const newtext = document.createTextNode(resultadoFuncion );
+    const elementoResultado = document.getElementById("resultado-1");
+    elementoResultado.innerHTML = "";
+    elementoResultado.appendChild(newtext);
+     }
+//  2.Solicitar al usuario un número, y determinar si es divisible entre dos o no.
+// Mostrando al usuario un mensaje de “x número es divisible entre 2” o “x
+// número
+    function pregunta2 (respuestaUsuario2){
+       if  ( (respuestaUsuario2 % 2) == 0 ) {
+          return "número es divisible entre 2";
+              }
+       else {
+          return "número no es divisible entre 2";
+              }
+          }            
+    function ejercicio2(){
+    const valorIngresado2 = document.getElementById("input-ejercicio-2").value;
+      const resultadoFuncion2 = pregunta2(valorIngresado2);
+      const newtext = document.createTextNode(resultadoFuncion2);
+      const elementoResultado2 = document.getElementById("resultado-2");
+      elementoResultado2.innerHTML = "";
+      elementoResultado2.appendChild(newtext);
+      }
+// 3.Crear un programa que determine si un número introducido en un Prompt
+// es par o no, la respuesta será mostrada en un Alert.
+    
+// funciones
+    function pregunta3 (respuestaUsuario3){
+      if   ( (respuestaUsuario3 % 2) == 0 ) {
+          return "numero es un numero par";
+      }
+      else {
+          return "numero es un numero inpar";
+      }
   }
-}
-//esta linea no debe ir porque no quiero que se ejecute cuando se carga el archivo
-//pregunta();
-
-function ejercicio1(){
-
-  const valorIngresado = document.getElementById("input-ejercicio-1").value;
-  const resultadoFuncion = pregunta(valorIngresado);
-  const newtext = document.createTextNode(resultadoFuncion );
-  const elementoResultado = document.getElementById("resultado-1");
-  elementoResultado.innerHTML = "";
-  elementoResultado.appendChild(newtext);
-  
-}
-         
-
-
-          
+  function ejercicio3(){
+      const valorIngresado3 = document.getElementById("input-ejercicio-3").value;
+      const resultadoFuncion3 = pregunta3(valorIngresado3);
+      const newtext = document.createTextNode(resultadoFuncion3);
+      const elementoResultado3 = document.getElementById("resultado-3");
+      elementoResultado3.innerHTML = "";
+      elementoResultado3.appendChild(newtext);
+  }
+//4.Solicitar al usuario un número de cliente. Si el número es el 1000, imprimir
+// "Ganaste un premio", en caso contrario mostrar el número y el mensaje
+// “Lo sentimos, sigue participando”
+     function pregunta4 (respuestaUsuario4){
+            if  ( (respuestaUsuario4 == 1000 ) ) {
+                return "Ganaste un premio";
+            }
+            else {
+                return "Lo sentimos, sigue participando";
+            }
+        }
+        function ejercicio4(){
+            const valorIngresado4 = document.getElementById("input-ejercicio-4").value;
+            const resultadoFuncion4 = pregunta4(valorIngresado4);
+            const newtext = document.createTextNode(resultadoFuncion4);
+            const elementoResultado4 = document.getElementById("resultado-4");
+            elementoResultado4.innerHTML = "";
+            elementoResultado4.appendChild(newtext);
+        }
+//5.Solicitar al usuario que ingrese dos números y mostrar cuál de los dos es menor. No considerar el caso en que ambos números son iguales.
+       
+      function pregunta5 (respuestaUsuario5A, respuestaUsuario5B){
+          if  (respuestaUsuario5A > respuestaUsuario5B) {
+              return (respuestaUsuario5B +' Es menor' );
+          }
+          if (respuestaUsuario5A < respuestaUsuario5B){
+              return  (respuestaUsuario5A +' Es menor' );
+          }
+      }
+        
+        function ejercicio5(){
+            const valorIngresado5A = document.getElementById("input-ejercicio-A").value;
+            const valorIngresado5B = document.getElementById("input-ejercicio-B").value;
+            const resultadoFuncion5 = pregunta5(valorIngresado5A,valorIngresado5B);
+            const newtext = document.createTextNode(resultadoFuncion5);
+            const elementoResultado5 = document.getElementById("resultado-5");
+            elementoResultado5.innerHTML = "";
+            elementoResultado5.appendChild(newtext);
+        }
+        
 
 
                 
