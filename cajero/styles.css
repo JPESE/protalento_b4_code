@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;   
+}
+body{
+background-image: url(imagenfondo.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+overflow: hidden;
+display:grid;
+place-items:center;
+
+}
+.presentacion{
+width: 300px;
+height: 250px;
+text-align: center;
+}
+.operaciones{
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.43);
+    border-radius: 10px; 
+    align-content:center;  
+    text-align: center; 
+    padding: auto;
+    margin: 50px;
+}
+button{
+    width:80px;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(231, 31, 71);
+    font-size: 18px;
+    margin: 10px;
+}
+.respuestaContraseña{
+    width: 300px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.43);
+    border: 2px solid rgb(46, 44, 44);   
+}
+.saldo{
+    width: 200px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.002);
+    align-content:center;  
+    text-align: center;     
+}
+.ingresaMonto{
+    width: 200px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0);
+    align-content:center;  
+    text-align: center;    
+}
+.retiro{
+    width: 200px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0);
+    align-content:center;  
+    text-align: center;    
+}
+
+
