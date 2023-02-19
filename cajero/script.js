@@ -1,44 +1,38 @@
 
-    let cuentas = [
-        {nombre: "Mali", saldo: 200, password: 1},
-        {nombre: "Gera", saldo: 290, password: 2},
-        {nombre: "Maui", saldo: 67, password: 3}
+    const cuentas = [
+        {nombre: "Mali", numeroCuenta: "1", saldo: 200, password: 1},
+        {nombre: "Gera", numeroCuenta: "2", saldo: 290, password: 2},
+        {nombre: "Maui", numeroCuenta: "3", saldo: 67, password: 3}
     ];
     
-    let resultadoSaldo
-    function pregunta(respuestaUsuario) {
+    function validarPIN(numeroCuenta, pin) {
+      for (let i = 0; i < usuarios.length; i++) {
+        if (usuarios[i].numeroCuenta === numeroCuenta && usuarios[i].pin === pin) {
+          return i;
+        }
+      }
+      return -1; // devolver -1 si el PIN no es correcto
+    }
+    //let Contraseña
+    //function pregunta(respuestaUsuario) 
      
-      if (respuestaUsuario === 'si') { 
-        return "digita tu contraseña";
-      }
-    }
-    
-    function ejercicio1(){
-      const valorIngresado = document.getElementById("input-respuesta-1").value;
-      const resultadoFuncion = pregunta(valorIngresado);
-      const newtext = document.createTextNode(resultadoFuncion);
-      const elementoResultado = document.getElementById("resultado-1");
-      elementoResultado.innerHTML = "";
-      elementoResultado.appendChild(newtext);
-    }
-    
-    
-    function preguntaContraseña(respuestaUsuario2) {
-      if (respuestaUsuario2 === '1') {
-        return "contraseña correcta";
-      }
-      else {
-        return "contraseña incorrecta";
-      }
-    }
-    function ejercicio2() {
-      const valorIngresado2 = document.getElementById("input-respuesta-2").value;
-      const resultadoFuncion2 = preguntaContraseña(valorIngresado2);
-      const newtext = document.createTextNode(resultadoFuncion2);
-      const elementoResultado2 = document.getElementById("resultado-2");
-      elementoResultado2.innerHTML = "";
-      elementoResultado2.appendChild(newtext);
-    }
+  
+    //function preguntaContraseña(respuestaUsuario) {
+    //  if (respuestaUsuario === '1') {
+    //    return "contraseña correcta";
+    //  }
+    //  else {
+    //    return "contraseña incorrecta";
+    //  }
+    //}
+    //function cuenta1() {
+    //  const valorIngresado = document.getElementById("input-contraseña-1").value;
+    //  const resultadoFuncion = preguntaContraseña(valorIngresado);
+    //  const newtext = document.createTextNode(resultadoFuncion);
+    //  const elementoResultado = document.getElementById("resultado");
+    //  elementoResultado.innerHTML = "";
+    //  elementoResultado.appendChild(newtext);
+    //}
      
   
     
