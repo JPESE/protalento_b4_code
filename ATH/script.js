@@ -17,14 +17,14 @@ function mali(form){
     }
     
 }
-function formula3(){
+function formula1(){
     let CantidadT=parseInt(document.getElementById('cant').value);
     let cantidad1=parseInt(document.getElementById('c1').value);
     document.getElementById('c1').value=(cantidad1+CantidadT);
     
 }
 
-function formula5(){
+function formula2(){
     let CantidadT=parseInt(document.getElementById('cant').value);
     let cantidad1=parseInt(document.getElementById('c1').value);
     document.getElementById('c1').value=(cantidad1-CantidadT);
@@ -43,3 +43,15 @@ function gera(form){
     }
     
 }    
+function formula3(){
+    let CantidadT=parseInt(document.getElementById('cant2').value);
+    let cantidad2=parseInt(document.getElementById('cGera').value);
+    document.getElementById('cGera').value=(cantidad2+CantidadT);
+    
+}
+
+function formula4(){
+    let CantidadT=parseInt(document.getElementById('cant2').value);
+    let cantidad2=parseInt(document.getElementById('cGera').value);
+    document.getElementById('cGera').value=(cantidad2-CantidadT);
+}
