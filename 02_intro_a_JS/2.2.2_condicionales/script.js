@@ -151,22 +151,22 @@
 // es par o no, la respuesta será mostrada en un Alert.
     
 // funciones
-    function pregunta3 (respuestaUsuario3){
-      if   ( (respuestaUsuario3 % 2) == 0 ) {
-          return "numero es un numero par";
-      }
-      else {
-          return "numero es un numero inpar";
-      }
-  }
-  function ejercicio3(){
-      const valorIngresado3 = document.getElementById("input-ejercicio-3").value;
-      const resultadoFuncion3 = pregunta3(valorIngresado3);
-      const newtext = document.createTextNode(resultadoFuncion3);
-      const elementoResultado3 = document.getElementById("resultado-3");
-      elementoResultado3.innerHTML = "";
-      elementoResultado3.appendChild(newtext);
-  }
+//    function pregunta3 (respuestaUsuario3){
+//      if   ( (respuestaUsuario3 % 2) == 0 ) {
+//          return "numero es un numero par";
+//      }
+//      else {
+//          return "numero es un numero inpar";
+//      }
+//  }
+//  function ejercicio3(){
+//      const valorIngresado3 = document.getElementById("input-ejercicio-3").value;
+//      const resultadoFuncion3 = pregunta3(valorIngresado3);
+//      const newtext = document.createTextNode(resultadoFuncion3);
+//      const elementoResultado3 = document.getElementById("resultado-3");
+//      elementoResultado3.innerHTML = "";
+//      elementoResultado3.appendChild(newtext);
+//  }
 //4.Solicitar al usuario un número de cliente. Si el número es el 1000, imprimir
 // "Ganaste un premio", en caso contrario mostrar el número y el mensaje
 // “Lo sentimos, sigue participando”
@@ -188,24 +188,24 @@
         }
 //5.Solicitar al usuario que ingrese dos números y mostrar cuál de los dos es menor. No considerar el caso en que ambos números son iguales.
        
-      function pregunta5 (respuestaUsuario5A, respuestaUsuario5B){
-          if  (respuestaUsuario5A > respuestaUsuario5B) {
-              return (respuestaUsuario5B +' Es menor' );
-          }
-          if (respuestaUsuario5A < respuestaUsuario5B){
-              return  (respuestaUsuario5A +' Es menor' );
-          }
-      }
+  //    function pregunta5 (respuestaUsuario5A, respuestaUsuario5B){
+  //        if  (respuestaUsuario5A > respuestaUsuario5B) {
+  //            return (respuestaUsuario5B +' Es menor' );
+  //        }
+  //        if (respuestaUsuario5A < respuestaUsuario5B){
+  //            return  (respuestaUsuario5A +' Es menor' );
+  //        }
+  //    }
         
-        function ejercicio5(){
-            const valorIngresado5A = document.getElementById("input-ejercicio-A").value;
-            const valorIngresado5B = document.getElementById("input-ejercicio-B").value;
-            const resultadoFuncion5 = pregunta5(valorIngresado5A,valorIngresado5B);
-            const newtext = document.createTextNode(resultadoFuncion5);
-            const elementoResultado5 = document.getElementById("resultado-5");
-            elementoResultado5.innerHTML = "";
-            elementoResultado5.appendChild(newtext);
-        }
+  //      function ejercicio5(){
+  //          const valorIngresado5A = document.getElementById("input-ejercicio-A").value;
+    //        const valorIngresado5B = document.getElementById("input-ejercicio-B").value;
+  //          const resultadoFuncion5 = pregunta5(valorIngresado5A,valorIngresado5B);
+  //          const newtext = document.createTextNode(resultadoFuncion5);
+  //          const elementoResultado5 = document.getElementById("resultado-5");
+  //          elementoResultado5.innerHTML = "";
+  //          elementoResultado5.appendChild(newtext);
+  //      }
         
 
 
