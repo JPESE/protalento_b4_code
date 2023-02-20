@@ -9,11 +9,11 @@ function mali(form){
         if (form.c.value=="1") {
             location="principal.html"
         } else {
-            alert("error de password");
-            
+            alert("error de password, intentelo de nuevo.");
+        //solamente puede haber 1 returno por función    
         }
     } else {
-        alert("error de usuario");
+        alert("error de usuario, intentelo de nuevo");
     }
     
 }
@@ -21,8 +21,8 @@ function formula1(){
     let CantidadT=parseInt(document.getElementById('cant').value);
     let cantidad1=parseInt(document.getElementById('c1').value);
     document.getElementById('c1').value=(cantidad1+CantidadT);
+        }
     
-}
 
 function formula2(){
     let CantidadT=parseInt(document.getElementById('cant').value);
@@ -54,4 +54,29 @@ function formula4(){
     let CantidadT=parseInt(document.getElementById('cant2').value);
     let cantidad2=parseInt(document.getElementById('cGera').value);
     document.getElementById('cGera').value=(cantidad2-CantidadT);
+}
+function maui(form){
+    if (form.uMaui.value=="Maui") {
+        if (form.cMaui.value=="3") {
+            location="maui.html"
+        } else {
+            alert("error de password");
+            
+        }
+    } else {
+        alert("error de usuario");
+    }
+    
+}    
+function formula5(){
+    let CantidadT=parseInt(document.getElementById('cant3').value);
+    let cantidad3=parseInt(document.getElementById('cMaui').value);
+    document.getElementById('cMaui').value=(cantidad3+CantidadT);
+    
+}
+
+function formula6(){
+    let CantidadT=parseInt(document.getElementById('cant3').value);
+    let cantidad3=parseInt(document.getElementById('cMaui').value);
+    document.getElementById('cMaui').value=(cantidad3-CantidadT);
 }
