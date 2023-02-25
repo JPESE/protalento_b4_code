@@ -20,8 +20,15 @@ function mali(form){
 function formula1(){
     let CantidadT=parseInt(document.getElementById('cant').value);
     let cantidad1=parseInt(document.getElementById('c1').value);
-    document.getElementById('c1').value=(cantidad1+CantidadT);
-        }
+     //if = document.getElementById('c1').value=(cantidad1+CantidadT);
+     let cantidadTotal=cantidad1+CantidadT
+     if (cantidadTotal<=990 && cantidadTotal>=10){
+        document.getElementById('c1').value=(cantidad1+CantidadT);
+     } else {
+alert("la cantidad no es valida");
+     } 
+    //hacer esto con gera y maui
+    }
     
 
 function formula2(){
