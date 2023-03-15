@@ -1,19 +1,20 @@
 //1. ¿Cuál es la salida de este código?
-//console.log('start'); //sincrono
-//const promise1 = new Promise((resolve, reject) => {
-//console.log(1)
-//})
-//console.log('end');
-//*2. ¿Cuál es la salida de este código?
-//console.log('start');
-//const promise1 = new Promise((resolve, reject) => {
-//console.log(1)
-//resolve(2)
-//})
-//promise1.then(res => {
-//console.log(res)
-//})
-//console.log('end');
+/*console.log('start'); //sincrono
+const promise1 = new Promise((resolve, reject) => {
+console.log(1)
+})
+console.log('end');*/
+//Respuesta:start,1,end
+//2. ¿Cuál es la salida de este código?
+/*console.log('start');
+const promise1 = new Promise((resolve, reject) => {
+console.log(1)
+resolve(2)
+})
+promise1.then(res => {
+console.log(res)
+})
+console.log('end');*/
 //3. ¿Cuál es la salida de este código?
 //console.log('start');
 //const promise1 = new Promise((resolve, reject) => {
@@ -35,7 +36,7 @@
 //})
 //console.log('end');
 //5. ¿Cuál es la salida de este código?
-console.log('start') //sincrono
+/*console.log('start') //sincrono
 const fn = () => (new Promise((resolve, reject) => {
 console.log(1); //sincrono
 resolve('success')
@@ -44,16 +45,16 @@ console.log('middle')
 fn().then(res => {
 console.log(res)
 })
-console.log('end')
+console.log('end')*/
 //6. ¿Cuál es la salida de este código?
-//console.log('start')
-//Promise.resolve(1).then((res) => {
-//console.log(res)
-//})
-//Promise.resolve(2).then((res) => {
-//console.log(res)
-//})
-//console.log('end')
+console.log('start') //1
+Promise.resolve(1).then((res) => { //3
+console.log(res)
+})
+Promise.resolve(2).then((res) => { //4
+console.log(res)
+})
+console.log('end') //2
 //7. ¿Cuál es la salida de este código?
 //console.log('start')
 //setTimeout(() => {
