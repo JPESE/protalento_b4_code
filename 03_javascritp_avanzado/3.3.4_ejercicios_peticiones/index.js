@@ -1,15 +1,32 @@
-// 1.- Hacer una funcion que haga una petición 
+// EJERCICIOS DE PETICIONES
+//1.- Hacer una funcion que haga una petición 
 //     (Ejemplo: peticionLibro(“i robot”);
 //     Buscar un libro y traer el o los autores del primer libro
 //     http://openlibrary.org/search.json?q=i+robot) 
 
+      //SIEMPRE EN CADA PROYECTO
+//- se debe en la terminal ubicarse en la carpeta en la cual se desea trabajar con el comando cd se entra a las carpetas desde la terminal, con ls sale donde esta ubicado.
+//- se deben poner npm init en la terminal para crear el archivo package.json.
+//- se debe crear el archivo .gitignore y poder dentro del archivo node_modules/
+// - para ver el resultado en la consola debo poner node index.js en la terminal. 
+                    //SOLUCIÓN EJERCICIO 1
+   //A: se instala el request en la terminal con el comando npm install request.
+   //B: se utiliza el request
 const request = require('request');
-//petición
-request.get("http://openlibrary.org/search.json?q=i+robot", function (error, response, body)
-{
- if    
+   //C:Se hace la petición con request get de la url y siempre lleva una funcion con error, response y body entre parentesis. 
+request.get("http://openlibrary.org/search.json?q=i+robot", function (error, response, body){
+if (response.statusCode === 200){
+   //D.JSON.parse: es una función que sirve para cambiar al json que viene de la pertición a un objeto de js
+const json = JSON.parse (body);
+console.log(json)
+} else {
+    console.log('error, algo esta mal en la petición', error)
+}  
 })
-
+//E.Se realiza la petición.
+const getLibroByTitulo = (libroTitulo) => {
+   request.get(`http://openlibrary.org/search.json?q=i+robot${libroTitulo}` )
+}
 
 // 2.- Hacer una petición por autor y devolver la lista de 
 //     sus libros

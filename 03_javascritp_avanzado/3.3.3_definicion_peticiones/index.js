@@ -35,8 +35,8 @@ de proteger la información transmitida entre el navegador del usuario y el serv
 Solicitud que se realiza a una API utilizando el protocolo de comunicacion HTTP para obtener o enviar
 informacion entre diferentes aplicaciones
 Cuando se realiza una peticion, el navegador web envia una solicitud HTTP
-al servidor y espera una respiuesta. La respuesta puede ser en formato JSON, XML, HTML u otro formato
-Las peticiones api se realizan generalmente mediante HTTP utilizando loss métodos HTTP
+al servidor y espera una respuesta. La respuesta puede ser en formato JSON, XML, HTML u otro formato
+Las peticiones api se realizan generalmente mediante HTTP utilizando los métodos HTTP
 como GET, POST, PUT, DELETE, PATCH
 */
 
