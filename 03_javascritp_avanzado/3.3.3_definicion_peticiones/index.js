@@ -78,3 +78,17 @@ const getPokemonByName = (pokemonName) => {
 
 getPokemonByName('Montse');
 getPokemonByName('persian');
+                        // CONCEPTOS MIOS 
+ //SIEMPRE EN CADA PROYECTO
+//- se debe en la terminal ubicarse en la carpeta en la cual se desea trabajar con el comando cd se entra a las carpetas desde la terminal, con ls sabe donde esta ubicado.
+//- se deben poner npm init en la terminal para crear el archivo package.json.
+//- se debe poner npm install en la terminal para crear el archivo package-lock.json.
+//- se debe crear el archivo .gitignore y poder dentro del archivo node_modules/
+// - se debe colocar en la terminal npm install recuest para crear las dependencias en el package.json. 
+// - para ver el resultado en la consola debo poner node index.js en la terminal. 
+
+/* NOTA: get:obtener
+         post: crear
+         put/patch:actualizar
+         delete:borrar*/
+        

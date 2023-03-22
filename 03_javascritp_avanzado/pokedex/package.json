@@ -1,0 +1,14 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "pagina de pokemones",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dayssi jp",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}

@@ -5,12 +5,13 @@
 //     http://openlibrary.org/search.json?q=i+robot) 
 
       //SIEMPRE EN CADA PROYECTO
-//- se debe en la terminal ubicarse en la carpeta en la cual se desea trabajar con el comando cd se entra a las carpetas desde la terminal, con ls sale donde esta ubicado.
+//- se debe en la terminal ubicarse en la carpeta en la cual se desea trabajar con el comando cd se entra a las carpetas desde la terminal, con ls sabe donde esta ubicado.
 //- se deben poner npm init en la terminal para crear el archivo package.json.
+//- se debe poner npm install en la terminal para crear el archivo package-lock.json.
 //- se debe crear el archivo .gitignore y poder dentro del archivo node_modules/
+// - se debe colocar en la terminal npm install recuest para crear las dependencias en el package.json. 
 // - para ver el resultado en la consola debo poner node index.js en la terminal. 
                     //SOLUCIÓN EJERCICIO 1
-   //A: se instala el request en la terminal con el comando npm install request.
    //B: se utiliza el request
 const request = require('request');
    //C:Se hace la petición con request get de la url y siempre lleva una funcion con error, response y body entre parentesis. 
