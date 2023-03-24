@@ -51,4 +51,4 @@ const getLibroByTitulo = (libroTitulo) => {
 // 6.- Traer los primeros 151 pokemon de la primera generacion y 
 //     devolver un arreglo de objetos con el nombre, sus moves, tipos, tamaño 
 //     y peso.
-//     https://pokeapi.co/
+//     /https://pokeapi.co
