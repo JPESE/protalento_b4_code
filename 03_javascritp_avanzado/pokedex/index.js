@@ -18,17 +18,23 @@ personajeElement.appendChild(imagenElement);
 return personajeElement;
 }
 
-fetch('https://pokeapi.co/api/v2/pokemon/ditto')
+fetch('https://pokeapi.co/api/v2/pokemon')
 .then(response => response.json())
 .then(data => {
-  
+console.log(data);
 data.results.map((elemento) => {
-    personajesDiv.appendChild(crearElemento(elemento.name, elemento.image
-        ));
-    console.log('elemento, elemento.name');
+
+   fetch(elemento.url)
+   .then(response => response.json())
+   .then(dataIndividual => {
+    console.log(dataIndividual);
+   })
+    console.log('elemento', elemento.url);
 })
 })
 .catch(error => {
     console.error(error);
 });
+function mostrarPokemones (name1){
+console.log(name1)}
 
