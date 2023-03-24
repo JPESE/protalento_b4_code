@@ -18,7 +18,7 @@ personajeElement.appendChild(imagenElement);
 return personajeElement;
 }
 
-fetch('https://storage.googleapis.com/campus-cvs/00000000000-images-lectures/pokemons.json')
+fetch('https://pokeapi.co/api/v2/pokemon/ditto')
 .then(response => response.json())
 .then(data => {
   
@@ -31,3 +31,4 @@ data.results.map((elemento) => {
 .catch(error => {
     console.error(error);
 });
+
