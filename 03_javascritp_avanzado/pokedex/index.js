@@ -4,7 +4,24 @@ let URL = "https://pokeapi.co/api/v2/pokemon/";
 for (let i = 1; i <= 151; i++) {
     fetch(URL + i)
     .then((response) => response.json())
-    .then(data => )
+    .then(data => mostarPokemon(data))
+}
+function mostrarPokemones(data){
+    const div = document.createElement(div);
+div.classList.add("pokemon");
+div.innerHTML = ` <div class="pokemon">
+<p class="pokemon-id-back">#025</p>
+<div class="pokemon-imagen">
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pikachu">
+</div>
+<div class="pokemon-info">
+    <div class="nombre-contenedor">
+<p class="pokemon-id">#025</p>
+<h2 class="pokemon-nombre">Pikachu</h2>
+    </div>
+    <div class="pokemon-tipos">
+<p class="tipo">Electric</p>
+    </div>`;  
 }
 
 
