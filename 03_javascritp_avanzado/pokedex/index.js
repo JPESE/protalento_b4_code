@@ -1,27 +1,33 @@
 const listaPokemon = document.querySelector("#listaPokemon");
 let URL = "https://pokeapi.co/api/v2/pokemon/";
 
-for (let i = 1; i <= 151; i++) {
+for (let i = 1; i <= 24; i++) {
     fetch(URL + i)
     .then((response) => response.json())
-    .then(data => mostarPokemon(data))
+    .then(data => mostrarPokemon(data))
 }
-function mostrarPokemones(data){
-    const div = document.createElement(div);
+function mostrarPokemon(poke){
+
+    let tipos = poke.types.map((type) => `<p class="${type.type.name}tipo">${type.type.name}</p>`);
+    tipos = tipos.join('');
+
+    const div = document.createElement("div");
 div.classList.add("pokemon");
-div.innerHTML = ` <div class="pokemon">
-<p class="pokemon-id-back">#025</p>
+div.innerHTML = `
+<p class="pokemon-id-back">${poke.id}</p>
 <div class="pokemon-imagen">
-    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pikachu">
+    <img src="${poke.sprites.other["official-artwork"].front_default}" alt="${poke.name}">
 </div>
 <div class="pokemon-info">
     <div class="nombre-contenedor">
-<p class="pokemon-id">#025</p>
-<h2 class="pokemon-nombre">Pikachu</h2>
+<p class="pokemon-id">${poke.id}</p>
+<h2 class="pokemon-nombre">${poke.name}</h2>
     </div>
     <div class="pokemon-tipos">
-<p class="tipo">Electric</p>
-    </div>`;  
+    ${tipos}
+</div>   
+</div>`;  
+listaPokemon.append(div);
 }
 
 
