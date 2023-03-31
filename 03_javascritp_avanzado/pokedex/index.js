@@ -1,5 +1,5 @@
 const listaPokemon = document.querySelector("#listaPokemon");
-const botonesHeader = 
+const botonesHeader = document.querySelectorAll(".btn-header");
 let URL = "https://pokeapi.co/api/v2/pokemon/";
 
 for (let i = 1; i <= 24; i++) {
@@ -37,6 +37,30 @@ div.innerHTML = `
 </div>`;  
 listaPokemon.append(div);
 }
+
+botonesHeader.forEach(boton => boton.addEventListener("click", (event) => {
+const botonId = event.currentTarget.id;
+
+listaPokemon.innerHTML = "";
+
+    for (let i = 1; i <= 25; i++) {
+        fetch(URL + 1)
+        .then((response) => response.json())
+        .then(data =>{
+
+            if(botonId === "ver-todos") {
+                mostrarPokemon(data);
+
+                } else {
+            const tipos = data.types.map(type => type.type.name);
+            if (tipos.some(tipo => tipo.includes(botonId))){
+              mostrarPokemon(data);
+            }
+        }
+        })
+    }
+ 
+}))
 
 
 
