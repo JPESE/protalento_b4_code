@@ -1,0 +1,11 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "Pokedex realizado con lenguaje de programaci´ HTML, CSS y JS, falta terminarlo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dayssi johanna",
+  "license": "ISC"
+}
