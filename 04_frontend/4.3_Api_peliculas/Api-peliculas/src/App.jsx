@@ -1,33 +1,48 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import axios from 'axios'
+import YouTube from 'react-youtube';
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const API_URL = 'https://api.themoviedb.org/3'
+  const API_KEY = 'dcb357894be50f7b1fc4efdc83650e6b'
+  const IMAGE_PATH = 'https://image.tmdb.org/t/p/original'
+  const URL_IMAGE = 'https://image.tmdb.org/t/p/original'
+
+  //variables de estado
+  const [movies, setMovies] = useState([])
+  const [searchKey, setSearchKey]= useState("")
+  const [trailer, setTrailer] = useState(null);
+  const [movie, setMovie] = useState({ title: "loading Movies"});
+  const [playing, setPlaying] = useState(false);
+
+  //función para realizar la petición por get a la api
+  const fetchMovies = async(searchKey) =>{
+    const type = searchKey ? "search" : "discover"
+    const {data: { results },
+  } = await axios.get(`${API_URL}/${type}/movie`, {
+    params: {
+      api_key: API_KEY,
+      query: searchKey,
+    },
+  });
+
+  setMovies(results)
+  setMovie(results[0])
+
+  }
 
   return (
+  
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+       {/*contenedor que va a mostrar posters de las peliculas actuales*/}
+       <div>
+
+       </div>
+      
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      
     </>
   )
 }
