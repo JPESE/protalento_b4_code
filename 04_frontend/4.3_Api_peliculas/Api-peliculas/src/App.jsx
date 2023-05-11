@@ -35,10 +35,12 @@ function App() {
   return (
   
     <>
-      <div>
+      <div> {/*divisiones etiqueta que sirve para crear secciones o agrupar contenidos*/}
        {/*contenedor que va a mostrar posters de las peliculas actuales*/}
-       <div>
-
+       <div className='container mt-3'>
+       <div className="row">
+        {movies.map} 
+       </div>
        </div>
       
       </div>
