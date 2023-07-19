@@ -10,7 +10,7 @@ const mongoConnect = async () => {
   try {
       await mongoose.connect(
           // WINDOWS 
-          'mongodb+srv://Troncoso:Troncoso@atlascluster.5ccqixp.mongodb.net/?retryWrites=true&w=majority'
+          'mongodb+srv://password y contraseña mias@atlascluster.5ccqixp.mongodb.net/?retryWrites=true&w=majority'
       )
       console.log(`Successfull connection, `)
   }
